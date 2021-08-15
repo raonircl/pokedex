@@ -1,6 +1,6 @@
 body {
 	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	background: linear-gradient(to right, rgb(69, 214, 240), rgba(90, 175, 111, 0.815));
 	color: white;
 	margin: 0;
 	font-family: rubik;
@@ -12,13 +12,16 @@ body {
 }
 
 h1 {
-	text-align: center;
-	font-size: 54px;
+	background-position:center;
+	background-image: url("/Javascript/pokedex/img/Pokédex_logo.webp");
+	margin: 20px;
+	padding: 70px;
+	background-repeat: no-repeat;
 }
 
 .pokedex {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	grid-gap: 20px;
 	padding-inline-start: 0;
 }
@@ -44,7 +47,9 @@ h1 {
   top: 15%;
   left: 25%;
 }
-
+.dark{
+	background-color: rgba(202, 9, 9, 0.521);
+}
 .steel {
 	background-color: #f4f4f4;
 }
@@ -103,6 +108,14 @@ h1 {
 
 .normal {
 	background-color: #F5F5F5;
+}
+.ghost:hover{
+	background-color: rgba(128, 124, 124, 0.705);
+	color: black;
+}
+.ghost{
+	background-color: black;
+	color: whitesmoke;
 }
 
 .card:hover {
