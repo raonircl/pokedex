@@ -1,5 +1,5 @@
 body {
-	background: #EFEFBB;
+	background: #000000;
 	/*background: linear-gradient(to right, rgb(69, 214, 240), rgba(90, 175, 111, 0.815));*/
 	background-image: url("/Javascript/pokedex/img/bg.jpg");
 	color: white;
@@ -25,6 +25,7 @@ h1 {
 	background-repeat: no-repeat;
 	justify-content: center;
 	background-size: 100mm;
+	cursor: pointer;
 }
 
 .pokedex {
