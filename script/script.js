@@ -5,20 +5,26 @@ const generatePokemonPromises = () => Array(890).fill().map((_,index) =>
      
     const generateHTML = pokemons => pokemons.reduce((accumulator, {name, id, types}) => {
             const elementTypes = types.map(typeInfo => typeInfo.type.name);
-            if (id < 10) {
+            /*if (id < 10) {
                 id2 = "00";
             }else if (id > 9 && id <100) {
                 id2 = "0"
             }else {
                 id2 = "";
-            }
+            }*/id2 = ( id < 10? "00": "0")
+                id3 = (id > 99? id2 = "": "0")
+                
+                
+                    
+                
             accumulator += `
                 <li class="card ${elementTypes[0]}">
-                <img class="card-image" alt="${name}" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//${id2+id}.png"/>
-                <h2 class="card-title">${id}.${name}</h2>
-                <p class="card-subtitle">${elementTypes.join(" | ")}</p>
+                <img class="card-image" alt="${name + " "}" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//${id2+id}.png"/>
+                <h2 class="card-title">${"#"+id}
+                <br>${name}</h2>
+                <p class="card-subtitle" id="${elementTypes.join("-")}">${elementTypes.join(" | ")}</p>
                 </li> `
-
+                console.log(id + "  :" + name + "  :" + elementTypes)
             return accumulator
             
         }, "") 
