@@ -37,7 +37,7 @@ const insertPokemonIntoPage = (html) => {
 };
 
 const generatePokePromises = () => {
-    const promises = Array(890).fill().map((_, index) => fetchPokemonData(index + 1));
+    const promises = Array(1010).fill().map((_, index) => fetchPokemonData(index + 1));
 
     return Promise.all(promises);
 };
