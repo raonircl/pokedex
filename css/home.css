@@ -16,3 +16,75 @@ body {
     background-size: 100mm;
 }
 
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+.card {
+    flex: 0 0 calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .pokedex {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card {
+        flex: 0 0 calc(30% - 10px);
+        margin-right: 0;
+        margin: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.8rem;
+    }
+}
