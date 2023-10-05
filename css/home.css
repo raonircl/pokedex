@@ -109,6 +109,8 @@ body {
 
     .card-subtitle {
         font-size: 0.8rem;
+        margin: 5px;
+        padding: 5px;
     }
 
     .card::after {
