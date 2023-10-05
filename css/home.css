@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    background-image: url("../img/bg.jpg");
+    font-family: 'Courier New', Courier, monospace;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    background-position: center;
+    background-image: url("../img/logo.png");
+    margin: 50px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: 100mm;
+}
+
