@@ -119,6 +119,10 @@ body {
         width: 100%;
         padding-top: 100%;
     }
+
+	.logo {
+		background-size: 70mm;
+	}
 }
 
 @keyframes bounce {
