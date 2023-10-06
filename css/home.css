@@ -10,10 +10,10 @@ body {
 .logo {
     background-position: center;
     background-image: url("../img/logo.png");
-    margin: 50px;
+    margin: 5git0px;
     padding: 50px;
     background-repeat: no-repeat;
-    background-size: 100mm;
+    background-size: 150mm;
 }
 
 .container {
