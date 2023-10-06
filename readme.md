@@ -19,11 +19,11 @@ Para executar o projeto da Pokédex, siga as etapas:
 
 1. **Clonar o repositório**: Faça o clone do repositório para o seu computador usando o seguinte comando GIT:
 
-git clone https://github.com/raonircl/pokedex.git
+    - git clone https://github.com/raonircl/pokedex.git
 
 2. **Navegue até o diretório**: Entre na pasta do projeto:
 
-cd pokedex
+    - cd pokedex
 
 3. **Abra o arquivo HTML**: Abra o arquivo "index.html" em um navegador da web. Você pode fazer isso clicando com o botão direito no arquivo e selecionando "Abrir com" e, em seguida, escolhendo um navegador.
 
