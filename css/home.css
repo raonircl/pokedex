@@ -103,6 +103,7 @@ body {
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

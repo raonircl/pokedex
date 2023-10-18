@@ -33,11 +33,11 @@ const generateHTML = (pokemons) => {
 
 const insertPokemonIntoPage = (html) => {
     const ul = document.querySelector('[data-js="pokedex"]');
-    ul.innerHTML = html;
+    ul.insertAdjacentHTML('beforeend', html);
 };
 
 let loadedPokemonCount = 0;
-const batchSize = 50;
+const batchSize = 51;
 
 const loadMorePokemon = async () => {
     const start = loadedPokemonCount + 1;
